@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: catalystsquad/template-go-cobra-app
+  repository: 'quay.io/catalystsquad/go-notifications'
   pullPolicy: IfNotPresent
 
 imagePullSecretCredentials: ""
@@ -10,23 +10,14 @@ healthCheck:
   enabled: true
   path: /health
   port: 6000
-serviceAccount:
-  # Specifies whether a service account should be created
-  create: true
-  # Annotations to add to the service account
-  annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
 
-ingress:
-  enabled: false
-  fqdn: ""
-  tlsSecretName: cert-manager/wildcard-certificate
-  prefix: /
-
-imagePullSecrets:
-  - name: image-pull-secret-credentials
+http:
+  enabled: true
+  port: 6001
+app:
+  cockroachdb: {}
+  notifo: {}
+imagePullSecrets: []
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -52,7 +43,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 6000
 
 resources: {}
 
@@ -67,3 +58,43 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+cockroachdb:
+  enabled: false
+  init:
+    jobAnnotations:
+      "argocd.argoproj.io/hook": Sync
+sql:
+  logger:
+    slowSqlSeconds: 1
+    level: error
+    ignoreRecordNotFound: true
+    colorfulLogs: true
+sentry:
+  enabled: false
+  debug: false
+  environment: local
+  sampleRate: 1.0
+  tracesSampleRate: 1.0
+  dsn: ''
+  clientOptions: {}
+  additionalTags: []
+notifo:
+  enabled: false
+prometheus:
+  enabled: false
+  path: "/metrics"
+  port: 9090
+  latencyHistogramsEnabled: true
+  serviceMonitor:
+    interval: 15s
+    scrapeTimeout: 10s
+    relabelings: []
+serviceMonitor:
+  enabled: false
+  namespaceSelector: {}
+  annotations: {}
+  labels: {}
+  interval: null
+  scrapeTimeout: null
+  relabelings: []

@@ -1,6 +1,15 @@
 apiVersion: v2
-name: template-go-cobra-app
-description: A template chart for the template-go-cobra-app
+name: go-notifications
+description: Helm chart for go-notifications
 type: application
 version: 0.0.0
 appVersion: "0.0.0"
+dependencies:
+  - name: cockroachdb
+    version: "9.1.1"
+    repository: https://charts.cockroachdb.com/
+    condition: cockroachdb.enabled
+  - name: notifo
+    version: ">=1.0.0-alpha"
+    repository: https://raw.githubusercontent.com/catalystsquad/charts/main/
+    condition: notifo.enabled

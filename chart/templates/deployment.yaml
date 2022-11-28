@@ -33,12 +33,56 @@ spec:
           env:
             - name: PORT
               value: {{ .Values.service.port | quote }}
-            - name: ENABLE_HEALTH_CHECK
-              value: {{ .Values.healthCheck.enabled | quote }}
-            - name: HEALTH_CHECK_PATH
-              value: {{ .Values.healthCheck.path }}
-            - name: HEALTH_CHECK_PORT
-              value: {{ .Values.healthCheck.port | quote }}
+            - name: HTTP_PORT
+              value: {{ .Values.http.port | quote }}
+            - name: SERVE_HTTP
+              value: {{ .Values.http.enabled | quote }}
+            - name: SCHEDULE_WINDOW
+              value: {{ .Values.app.scheduleWindow }}
+            - name: RUNNER_WINDOW
+              value: {{ .Values.app.runnerWindow }}
+            - name: CLEANUP_WINDOW
+              value: {{ .Values.app.cleanupWindow }}
+            - name: COCKROACHDB_URI
+              value: {{ .Values.app.cockroachdb.uri }}
+            - name: NOTIFO_BASE_URL
+              value: {{ .Values.app.notifo.baseUrl }}
+            - name: NOTIFO_APP_ID
+              value: {{ .Values.app.notifo.appId }}
+            - name: NOTIFO_API_KEY
+              value: {{ .Values.app.notifo.apiKey }}
+            - name: SENTRY_ENABLED
+              value: {{ .Values.sentry.enabled | quote }}
+            - name: SENTRY_CLIENT_OPTIONS
+              value: {{ .Values.sentry.clientOptions | toJson | quote }}
+            - name: SENTRY_DSN
+              value: {{ .Values.sentry.dsn }}
+            - name: SENTRY_DEBUG
+              value: {{ .Values.sentry.debug | quote }}
+            - name: SENTRY_ENVIRONMENT
+              value: {{ .Values.sentry.environment }}
+            - name: SENTRY_SAMPLE_RATE
+              value: {{ .Values.sentry.sampleRate | quote }}
+            - name: SENTRY_TRACES_SAMPLE_RATE
+              value: {{ .Values.sentry.tracesSampleRate | quote }}
+            - name: ADDITIONAL_SENTRY_TAGS
+              value: {{ .Values.sentry.additionalTags | toJson | quote }}
+            - name: PROMETHEUS_ENABLED
+              value: {{ .Values.prometheus.enabled | quote }}
+            - name: PROMETHEUS_PATH
+              value: {{ .Values.prometheus.path }}
+            - name: PROMETHEUS_PORT
+              value: {{ .Values.prometheus.port | quote }}
+            - name: PROMETHEUS_LATENCY_HISTOGRAMS_ENABLED
+              value: {{ .Values.prometheus.latencyHistogramsEnabled | quote }}
+            - name: SQL_LOGGER_SLOW_SQL_SECONDS
+              value: {{ .Values.sql.logger.slowSqlSeconds | quote }}
+            - name: SQL_LOGGER_LEVEL
+              value: {{ .Values.sql.logger.level }}
+            - name: SQL_LOGGER_IGNORE_RECORD_NOT_FOUND
+              value: {{ .Values.sql.logger.ignoreRecordNotFound | quote }}
+            - name: SQL_LOGGER_COLORFUL_LOGS
+              value: {{ .Values.sql.logger.colorfulLogs | quote }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
