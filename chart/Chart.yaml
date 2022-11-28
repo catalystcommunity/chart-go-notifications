@@ -2,7 +2,7 @@ apiVersion: v2
 name: go-notifications
 description: Helm chart for go-notifications
 type: application
-version: 0.0.0
+version: 1.0.0-alpha.1
 appVersion: "0.0.0"
 dependencies:
   - name: cockroachdb
