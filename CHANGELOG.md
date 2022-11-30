@@ -1,3 +1,10 @@
+# [1.0.0-alpha.3](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2022-11-30)
+
+
+### Bug Fixes
+
+* Fix liveness probe ([#6](https://github.com/catalystsquad/chart-go-notifications/issues/6)) ([26b98bf](https://github.com/catalystsquad/chart-go-notifications/commit/26b98bf33738d3cd73fa225a980abc73279d87ff))
+
 # [1.0.0-alpha.2](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2022-11-29)
 
 
