@@ -91,9 +91,15 @@ spec:
               containerPort: {{ .Values.healthCheck.port }}
               protocol: TCP
           livenessProbe:
-            httpGet:
-              port: {{ .Values.healthCheck.port }}
-              path: {{ .Values.healthCheck.path }}
+            exec:
+              command:
+                - "/grpc_health_probe"
+                - "-addr=:{{ .Values.service.port }}"
+          readinessProbe:
+            exec:
+              command:
+                - "/grpc_health_probe"
+                - "-addr=:{{ .Values.service.port }}"
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
