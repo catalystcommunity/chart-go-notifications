@@ -1,3 +1,10 @@
+# [1.0.0-alpha.4](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2022-11-30)
+
+
+### Bug Fixes
+
+* Fix client initialization. Global init doesn't work because we r… ([f074f75](https://github.com/catalystsquad/chart-go-notifications/commit/f074f75102d3ca901d48bd5554e922c1e066d596))
+
 # [1.0.0-alpha.3](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2022-11-30)
 
 
