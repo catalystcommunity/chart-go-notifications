@@ -1,3 +1,10 @@
+# [1.0.0-alpha.5](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2022-12-19)
+
+
+### Bug Fixes
+
+* settings, readme, trigger release ([#8](https://github.com/catalystsquad/chart-go-notifications/issues/8)) ([2814ab9](https://github.com/catalystsquad/chart-go-notifications/commit/2814ab9b29cb303a62e39cc4e6a9009def1eb172))
+
 # [1.0.0-alpha.4](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2022-11-30)
 
 
