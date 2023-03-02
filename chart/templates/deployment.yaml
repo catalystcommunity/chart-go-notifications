@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "template-go-cobra-app.fullname" . }}
+  name: {{ include "go-notifications.fullname" . }}
   labels:
-    {{- include "template-go-cobra-app.labels" . | nindent 4 }}
+    {{- include "go-notifications.labels" . | nindent 4 }}
 spec:
   selector:
     matchLabels:
-      {{- include "template-go-cobra-app.selectorLabels" . | nindent 6 }}
+      {{- include "go-notifications.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -15,13 +15,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "template-go-cobra-app.selectorLabels" . | nindent 8 }}
+        {{- include "go-notifications.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "template-go-cobra-app.serviceAccountName" . }}
+      serviceAccountName: {{ include "go-notifications.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
