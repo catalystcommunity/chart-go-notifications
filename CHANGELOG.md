@@ -1,3 +1,10 @@
+## [1.0.1-alpha.1](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0...v1.0.1-alpha.1) (2023-03-07)
+
+
+### Bug Fixes
+
+* support autoscaling/v2 api version for hpa ([#10](https://github.com/catalystsquad/chart-go-notifications/issues/10)) ([82db864](https://github.com/catalystsquad/chart-go-notifications/commit/82db864dfc37c480578237ffd7424b237101502a))
+
 # 1.0.0 (2022-12-19)
 
 
