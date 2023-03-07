@@ -14,9 +14,11 @@ healthCheck:
 http:
   enabled: true
   port: 6001
+
 app:
   cockroachdb: {}
   notifo: {}
+
 imagePullSecrets: []
 
 serviceAccount:
