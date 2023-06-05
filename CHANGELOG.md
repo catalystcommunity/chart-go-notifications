@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.0...v1.1.0) (2023-06-05)
+
+
+### Bug Fixes
+
+* support autoscaling/v2 api version for hpa ([#10](https://github.com/catalystsquad/chart-go-notifications/issues/10)) ([82db864](https://github.com/catalystsquad/chart-go-notifications/commit/82db864dfc37c480578237ffd7424b237101502a))
+
+
+### Features
+
+* upgrade go-scheduler, implement db conn pooling config ([83d200b](https://github.com/catalystsquad/chart-go-notifications/commit/83d200b5ffe0b8a0a42b4b8f805dfccb7f15692e))
+
 # [1.1.0-alpha.1](https://github.com/catalystsquad/chart-go-notifications/compare/v1.0.1-alpha.1...v1.1.0-alpha.1) (2023-05-31)
 
 
