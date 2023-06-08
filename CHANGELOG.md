@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/catalystsquad/chart-go-notifications/compare/v1.1.0...v1.1.1) (2023-06-08)
+
+
+### Bug Fixes
+
+* add correlationId to notification events ([fefb4e2](https://github.com/catalystsquad/chart-go-notifications/commit/fefb4e22d2d95a26e1740969107ba0de14cb8402))
+
 ## [1.1.1-alpha.1](https://github.com/catalystsquad/chart-go-notifications/compare/v1.1.0...v1.1.1-alpha.1) (2023-06-06)
 
 
