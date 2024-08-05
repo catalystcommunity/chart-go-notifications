@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: 'quay.io/catalystsquad/go-notifications'
+  repository: 'quay.io/catalystcommunity/go-notifications'
   pullPolicy: IfNotPresent
 
 imagePullSecretCredentials: ""

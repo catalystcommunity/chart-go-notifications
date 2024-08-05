@@ -11,5 +11,5 @@ dependencies:
     condition: cockroachdb.enabled
   - name: notifo
     version: ">=1.0.0-alpha"
-    repository: https://raw.githubusercontent.com/catalystsquad/charts/main/
+    repository: https://raw.githubusercontent.com/catalystcommunity/charts/main/
     condition: notifo.enabled

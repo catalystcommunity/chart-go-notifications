@@ -3,7 +3,7 @@ dependencies:
   repository: https://charts.cockroachdb.com/
   version: 9.1.1
 - name: notifo
-  repository: https://raw.githubusercontent.com/catalystsquad/charts/main/
+  repository: https://raw.githubusercontent.com/catalystcommunity/charts/main/
   version: 1.0.0-alpha.2
 digest: sha256:8b53a5b05ea6d658e3ed6ff582fc7eb0b3b1324ee9156eac21e9c34aefb8862b
 generated: "2022-11-28T14:29:47.971272737-07:00"
