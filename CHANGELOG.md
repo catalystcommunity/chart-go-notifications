@@ -1,3 +1,11 @@
+## [1.1.2-alpha.1](https://github.com/catalystcommunity/chart-go-notifications/compare/v1.1.1...v1.1.2-alpha.1) (2025-01-09)
+
+
+### Bug Fixes
+
+* move to catalystcommunity ([1c3636f](https://github.com/catalystcommunity/chart-go-notifications/commit/1c3636f9db7d6b9b408e98137a991a66943d255b))
+* update chart.lock ([#19](https://github.com/catalystcommunity/chart-go-notifications/issues/19)) ([29e9894](https://github.com/catalystcommunity/chart-go-notifications/commit/29e9894cc4bce1117ecf71685a5a31f34ffc6aa9))
+
 ## [1.1.1](https://github.com/catalystcommunity/chart-go-notifications/compare/v1.1.0...v1.1.1) (2023-06-08)
 
 
