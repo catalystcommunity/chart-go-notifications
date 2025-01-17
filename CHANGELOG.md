@@ -1,3 +1,10 @@
+## [1.1.2-alpha.2](https://github.com/catalystcommunity/chart-go-notifications/compare/v1.1.2-alpha.1...v1.1.2-alpha.2) (2025-01-17)
+
+
+### Bug Fixes
+
+* change to trigger release ([bc57062](https://github.com/catalystcommunity/chart-go-notifications/commit/bc5706243e1e7bba2aa1d1b5e54b92aab338b49a))
+
 ## [1.1.2-alpha.1](https://github.com/catalystcommunity/chart-go-notifications/compare/v1.1.1...v1.1.2-alpha.1) (2025-01-09)
 
 
